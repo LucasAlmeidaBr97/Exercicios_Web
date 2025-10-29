@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 680px;
+    height: 680px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.box1, .box2 {
+    width: 200px;
+    height: 200px;
+    background: aqua;
+    border: solid 3px black;
+    
+}

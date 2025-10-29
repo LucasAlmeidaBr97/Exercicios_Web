@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.fundo {
+    width: 100%;
+    height: 100vh;
+    background: 
+        linear-gradient(rgba(43, 9, 235, 0.5), rgba(43, 9, 235, 0.2)),
+        url(../imagens/sunset.jpg) center/cover;
+    background-attachment: fixed;
+    transition: background 0.3s ease;
+}
+
+.fundo:hover{
+    background: 
+        linear-gradient(rgba(235, 9, 9, 0.5), rgba(235, 9, 9, 0.2)),
+        url(../imagens/sunset.jpg) center/cover;
+    background-attachment: fixed;    
+}

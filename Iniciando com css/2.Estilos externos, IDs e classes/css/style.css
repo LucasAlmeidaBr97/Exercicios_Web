@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    width: 1280px;
+    height: 300px;
+}
+
+#meu_header{
+    color: white;
+}
+
+.destaque{
+    color: yellow;
+    font-weight: bold;
+}

@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: aqua;
+    display: flex;
+}
+
+.corpo{
+    width: 600px;
+    height: 600px;
+    background-color: red;
+    display: flex;
+    margin: auto;
+
+}
+
+.corpo p{
+    color: white;
+    width: 200px;
+    margin: auto;
+}

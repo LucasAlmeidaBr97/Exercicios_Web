@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container {
+   width: 680px;
+   height: 680px;
+   background-color: red;
+   position: relative;
+   overflow: auto;
+}
+
+.box1, .box2 {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border: solid 2px black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 320px;
+    top: 5px;
+}
+
+.box1 {
+    z-index: 20;
+}
+
+.box2 {
+    margin-left: 500px;
+    background-color: green;
+    z-index: 20;
+}

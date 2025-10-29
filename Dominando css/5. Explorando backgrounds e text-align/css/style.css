@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.paragrafo1, .paragrafo2 {
+    background-color: lightslategray;
+    box-sizing: border-box;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 8px; 
+}
+
+.paragrafo1 {
+    text-align: justify;
+}
+
+.paragrafo2 {
+    text-align: center;
+}
+
+p {
+    text-shadow: 5px 5px 6px;
+}
