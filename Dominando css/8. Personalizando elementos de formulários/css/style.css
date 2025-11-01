@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+form {
+    padding: 10px;
+    background: white;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: url('../imagens/check-icon.png') center/contain no-repeat;
+    border: none;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: lightgreen;
+    border: solid 3px rgba(71, 70, 70, 0.9);
+    border-radius: 50%;
+}
+
+input[type="radio"]:hover {
+    border: solid 3px rgba(71, 70, 70, 1);
+}
+
+input[type="radio"]:checked {
+    width: 20px;
+    height: 20px;
+    background: gray;
+    box-shadow: 0 0 0 2px white inset;
+}
