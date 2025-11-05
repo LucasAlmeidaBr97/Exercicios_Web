@@ -3,58 +3,49 @@
     padding: 0;
 }
 
+
 html,
 body {
     height: 100%;
     background-color: blueviolet;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
+
 
 form {
+    width: 300px;
+    padding: 20px;
     background-color: white;
-    width: 400px;
-    padding: 10px;
-    border-radius: 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 5%;
 }
 
-fieldset {
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-}
 
-.input-field {
-    width: 75%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
+form input,
+form textarea,
+form select,
 form button {
-    background: #007bff;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+button {
     color: white;
+    background: #007bff;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3%;
 }
 
 button:hover {
-    background-color: aqua;
+    background: #0062ca;
 }
 
-form button:active {
-    background: #003f7f;
-}
-
-.input-field:focus {
-    border: solid 2px blue;
+form input:focus,
+form select:focus,
+form textarea:focus {
     outline: none;
+    border: 2px solid #0062ca;
 }
