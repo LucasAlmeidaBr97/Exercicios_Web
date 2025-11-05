@@ -7,40 +7,40 @@ html,
 body {
     height: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: blueviolet;
+    align-items: center;
+    background: blueviolet;
 }
 
 form {
-    padding: 10px;
     background: white;
+    padding: 20px;
 }
 
-input[type="checkbox"] {
+input[type="checkbox"]:checked {
     appearance: none;
-    width: 20px;
-    height: 20px;
-    background: url('../imagens/check-icon.png') center/contain no-repeat;
-    border: none;
-}
-
-input[type="radio"] {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    background-color: lightgreen;
-    border: solid 3px rgba(71, 70, 70, 0.9);
-    border-radius: 50%;
-}
-
-input[type="radio"]:hover {
-    border: solid 3px rgba(71, 70, 70, 1);
+    width: 13px;
+    height: 13px;
+    background: url(../imagens/check-icon.png) center/contain no-repeat;
+    border-radius: 20%;
 }
 
 input[type="radio"]:checked {
-    width: 20px;
-    height: 20px;
-    background: gray;
+    appearance: none;
+    border: 2px solid #818181;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #0075ff;
     box-shadow: 0 0 0 2px white inset;
+}
+
+input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
