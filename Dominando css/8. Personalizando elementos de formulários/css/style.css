@@ -6,33 +6,53 @@
 html,
 body {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 form {
+    width: 300px;
+    padding: 10px;
     background: white;
-    padding: 20px;
+    border-radius: 5%;
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"] {
     appearance: none;
     width: 13px;
     height: 13px;
+    border: solid 1px #767676;
+    border-radius: 2px;
+
+}
+
+input[type="checkbox"]:hover {
+    border: solid 1px #554e4e;
+}
+
+input[type="checkbox"]:checked {
+    width: 13px;
+    height: 13px;
     background: url(../imagens/check-icon.png) center/contain no-repeat;
-    border-radius: 20%;
+    border: none;
+}
+
+input[type="radio"] {
+    width: 15px;
+    height: 15px;
+    border: solid 1px #767676;
 }
 
 input[type="radio"]:checked {
     appearance: none;
-    border: 2px solid #818181;
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: #0075ff;
-    box-shadow: 0 0 0 2px white inset;
+    background: #0075ff;
+    border: solid 1px #0075ff;
+    box-shadow: 0 0 0 2px white inset
 }
 
 input[type="file"] {
@@ -44,3 +64,4 @@ input[type="file"] {
     border-radius: 5px;
     cursor: pointer;
 }
+
