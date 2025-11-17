@@ -4,11 +4,23 @@
 }
 
 html, body {
-    height: 100%
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: blueviolet;
 }
 
-input[required]{
-    background-color: green;
+form {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    border: solid 3px blue;
+    background: lightgray;
+}
+
+input[required] {
+    background: yellow;
 }
 
 button[disabled] {
@@ -20,9 +32,9 @@ select[data-type="primary"] {
 }
 
 [data-type^="pri"] {
-    background-color: yellow;
+    font-weight: bold;
 }
 
-[data-type^="pri"] {
-    font-weight: bold;
+[data-type$="ary"] {
+    color: green;
 }
