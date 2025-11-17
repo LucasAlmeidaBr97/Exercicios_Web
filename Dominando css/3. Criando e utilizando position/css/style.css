@@ -7,44 +7,54 @@ html, body {
     height: 100%;
 }
 
+body {
+    padding-top: 20vh;
+}
 
-.cabeçalho, .botao, .conteudo_pequeno, .conteudo_grende{
+header {
+    width: 100%;
+    height: 20vh;
+    background: blueviolet;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
-    font-weight: bold;    
-}  
-
-.cabeçalho {
-    width: 100%;
-    height: 250px;
-    background-color: greenyellow;
+    font-weight: bold;
     position: fixed;
     top: 0;
 }
 
-.botao {
-    padding: 15px;
-    background-color: aqua;
+button {
+    background: aqua;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
     position: absolute;
     bottom: 0;
     right: 0;
 }
 
-.conteudo_pequeno {
+button:hover {
+   background: rgba(0, 255, 255, 0.514); 
+}
+
+.content {
     width: 100%;
-    height: 150px;
-    background-color: blue;
-    margin-top: 20px;
+    height: 20vh;
+    background: purple;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     top: 0;
 }
 
-.conteudo_grende {
-    width: 100%;
-    height: 2500px;
-    background-color: blueviolet;
+.big_content {
+    background: black;
+    height: 2000px;
 }
