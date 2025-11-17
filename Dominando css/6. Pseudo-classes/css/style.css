@@ -8,22 +8,22 @@ html, body {
 }
 
 ul {
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
 
-li:hover {
-    background-color: aqua;
-    transition: background-color 0.3s ease;
+ul li:hover {
+    background: gray;
 }
 
-ul li:first-child {
-    color: blue;
+ul li:first-child{
+    color: brown;
 }
 
 ul li:last-child {
-    border: 1px solid blue;
+    border: 2px solid black;
 }
 
-ul li:nth-child(odd) {
-    background-color: lightgray;
+ul li:nth-last-child(odd) {
+    background-color: #f0f0f0;
 }
