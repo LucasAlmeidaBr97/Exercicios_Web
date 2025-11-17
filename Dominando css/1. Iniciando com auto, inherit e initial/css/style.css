@@ -1,27 +1,18 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    height: 100%;
-}
-
 .box1, .box2, .box3 {
     width: 300px;
     height: 300px;
+    border: solid black 1px;
+    background: blueviolet;
     color: white;
-    background-color: brown;
-    border: 2px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .box2 {
-    margin: 0 auto;
     color: inherit;
+    margin: auto;
 }
 
 .box3 {
