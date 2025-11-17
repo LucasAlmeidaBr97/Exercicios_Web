@@ -3,49 +3,57 @@
     padding: 0;
 }
 
-
 html,
 body {
     height: 100%;
-    background-color: blueviolet;
+    background: blueviolet;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
 form {
     width: 300px;
-    padding: 20px;
-    background-color: white;
+    height: 300px;
+    background: white;
+    padding: 10px;
     border-radius: 5%;
 }
 
-
-form input,
-form textarea,
-form select,
-form button {
-    width: 100%;
-    margin-bottom: 15px;
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+button {
+    width: 95%;
+    height: 20px;
+    margin-bottom: 10px;
 }
 
 button {
+    background: aquamarine;
     color: white;
-    background: #007bff;
+    font-weight: bold;
     border: none;
-    padding: 5px;
     cursor: pointer;
-    border-radius: 3%;
+    padding: 10px;
+    height: auto;
+    border-radius: 5px;
 }
 
 button:hover {
-    background: #0062ca;
+    background: rgb(127, 182, 255);
 }
 
-form input:focus,
-form select:focus,
-form textarea:focus {
+textarea {
+    height: auto;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
     outline: none;
-    border: 2px solid #0062ca;
+    border: 2px solid #8a2be2;
+    box-shadow: 0 0 4px #8a2be2;
 }
