@@ -9,19 +9,26 @@
 </head>
 
 <body>
-
     <form action="">
-        <label for="terms">Aceitar termos e condições</label>
-        <input type="checkbox" name="terms" id="terms">
 
-        <label for="radio">Opção 1</label>
-        <input type="radio" name="option" id="radio">
+        <div>
+            <label for="checkbox" class="desc">Aceito os Termos</label>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" class="btn-checkbox"></label>
+        </div>
 
-        <label for="picture">Imagem:</label>
-        <input type="file" name="picture" id="picture">
+        <div>
+            <label for="radio">Opção 1</label>
+            <input type="radio" id="radio" name="option">
+            <label for="radio" class="btn-radio"></label>
+        </div>
+
+        <div>
+            <label for="arquivo" class="btn-file">Escolher Arquivo</label>
+            <input type="file" id="arquivo" name="arquivo">
+        </div>
+
     </form>
-
-
 </body>
 
 </html>

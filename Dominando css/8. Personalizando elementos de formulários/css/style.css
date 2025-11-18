@@ -14,54 +14,90 @@ body {
 
 form {
     width: 300px;
-    padding: 10px;
-    background: white;
+    height: 300px;
     border-radius: 5%;
+    background: lightgray;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: cadetblue;
 }
 
-input[type="checkbox"] {
-    appearance: none;
-    width: 13px;
-    height: 13px;
-    border: solid 1px #767676;
+.btn-checkbox {
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    border: 1px solid #767676;
     border-radius: 2px;
-
+    background: white;
 }
 
-input[type="checkbox"]:hover {
-    border: solid 1px #554e4e;
-}
-
-input[type="checkbox"]:checked {
-    width: 13px;
-    height: 13px;
-    background: url(../imagens/check-icon.png) center/contain no-repeat;
-    border: none;
-}
-
-input[type="radio"] {
-    width: 15px;
-    height: 15px;
-    border: solid 1px #767676;
-}
-
-input[type="radio"]:checked {
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background: #0075ff;
-    border: solid 1px #0075ff;
-    box-shadow: 0 0 0 2px white inset
-}
-
-input[type="file"] {
-    display: block;
-    margin-top: 10px;
-    padding: 5px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
+.btn-checkbox:hover {
+    border: 1px solid black;
     cursor: pointer;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
+
+#checkbox:checked+.btn-checkbox {
+    background: url(../imagens/check-icon.png) center/cover;
+    border: none;
+    transition: background 0.3 ease;
+}
+
+.btn-radio {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 1px #808080;
+    background: white;
+
+}
+
+.btn-radio:hover {
+    border: solid 1px black;
+    transition: background 0.3 ease;
+}
+
+#radio:checked+.btn-radio {
+    border: solid 1px #73df5c;
+    background: #73df5c;
+    box-shadow: 0 0 0 1.5px white inset;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.btn-file {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    width: 200px;
+    height: 20px;
+    border: none;
+    border-radius: 5px;
+    background: lightblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-file:hover {
+    background: rgb(173, 196, 230);
+    transition: background 0.3s ease;
+}
+
+input[type="file"] {
+    display: none;
+}
