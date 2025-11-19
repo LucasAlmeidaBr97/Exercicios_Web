@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 30px;
+}
+
+button[data-action="comprar"] {
+    font-weight: bold;
+    color: #131314;
+    padding: 10px;
+    border: none;
+    border-radius: 1rem;
+    transition: background 0.3s ease, color 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[data-action="comprar"]:hover {
+    background: #a8c7fa;
+    color: white;
+    border-radius: 1rem;
+    border: 1px solid #a8c7fa;
+    box-shadow: 0 0 0 2px white inset;
+    cursor: pointer;
+
+}
+
+img {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+img:hover {
+    opacity: 0.2;
+}
