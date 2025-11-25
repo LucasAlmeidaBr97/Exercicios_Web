@@ -4,53 +4,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Starbuscks Coffe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Starbucks Coffe</title>
 </head>
 
 <body>
     <header>
-        <div class="center">
+        <picture class="logo">
+            <a href="/"><img src="assets/logo.png" alt="Logo Starbucks"></a>
+        </picture>
 
-            <div class="logo"><img src="assets/logo.png" alt="Logo Starbuscks"></div><!--Logo-->
-
-            <div class="menu">
-                <a href="#">Home</a>
-                <a href="#">Menu</a>
-                <a href="#">What's New</a>
-                <a href="#">Contact us</a>
-            </div><!--menu-->
-
-        </div><!--center-->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/menu">Menu</a></li>
+                <li><a href="/What's New">What's New</a></li>
+                <li><a href="/Contact us">Contact us</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="about">
-        <div class="product">
-            <img src="assets/img1.png" alt="Bebida Lactea cor verde">
-        </div><!--Product-->
+    <div class="page-container">
 
-        <div class="social-media">
-            <img src="assets/facebook.png" alt="Logo facebook">
-            <img src="assets/instagram.png" alt="Logo instagram">
-            <img src="assets/twitter.png" alt="Logo twitter">
-        </div><!--Social-media-->
+        <main>
+            <div class="product-background">
+                <picture class="product">
+                    <img src="assets/img1.png" alt="Bebida Lactea Verde">
+                </picture>
+            </div>
 
-        <div class="center">
-            <div class="sobre">
-                <h1>It's not just Coffee<br>It's <span style="color: #017143;">StarBucks</span></h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ultricies euismod congue. Fusce
-                    sit amet ipsum at risus maximus sagittis. Donec id orci ut turpis viverra dignissim id quis sem. Nam
-                    eget lacus malesuada, scelerisque justo sit amet, cursus turpis. Donec a efficitur ex. Maecenas nunc
-                    sapien, semper sed iaculis sed, pharetra a magna. Curabitur a enim euismod, dignissim nisi eu,
-                    semper dui. Etiam non risus elit. Proin a lorem ut risus cursus hendrerit ac sed lorem.
+            <section class="about">
+                <h2>It's not just Coffee<br>It's <span style="color:#017143; font-weight: 700;">Starbucks</span></h2>
+                <p>Etiam in turpis non urna placerat feugiat id ut libero. Suspendisse a orci eget neque mattis
+                    tincidunt eget vel metus. Cras quis vehicula libero. Nunc a magna fringilla, condimentum neque nec,
+                    pulvinar urna. In dignissim ornare magna vitae sollicitudin. Integer elit lectus, scelerisque quis
+                    est non, euismod pellentesque tortor. Aliquam pretium dolor sed lacinia posuere. Fusce ultricies
+                    congue odio eu porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                    inceptos himenaeos. Vestibulum congue, tortor at feugiat pretium, nisl orci fermentum ante, vel
+                    consequat elit elit maximus mauris. Aliquam erat volutpat. In imperdiet molestie neque eu ultrices.
+                    Etiam accumsan massa eu tortor luctus bibendum. Suspendisse potenti.
                 </p>
 
-                <button>Learn More</button>
-            </div>
-        </div>
+                <button class="btn-learn">Learn More</button>
+            </section>
+        </main>
 
-    </section><!--About-->
+    </div>
+
+    <footer>
+
+        <nav class="nav-social-media">
+            <ul>
+                <li><a href="#"aria-label="Acesse nosso Facebook"><img style="width: 18px;" src="assets/facebook.png" alt="Logo facebook"></a></li>
+                <li><a href="#"aria-label="Acesse nosso Instagram"><img src="assets/instagram.png" alt="Logo Instagram"></a></li>
+                <li><a href="#"aria-label="Acesse nosso Twitter"><img src="assets/twitter.png" alt="Logo Twitter"></a></li>
+            </ul>
+        </nav>
+
+        <section class="more-products">
+            <ul>
+                <li><img src="assets/img1.png" alt="Bebida Lactea Verde"></li>
+                <li><img src="assets/img2.png" alt="Bebida Lactea Laranja"></li>
+                <li><img src="assets/img3.png" alt="Bebida Lactea Pink"></li>
+            </ul>
+        </section>
+
+    </footer>
+
 </body>
 
 </html>
