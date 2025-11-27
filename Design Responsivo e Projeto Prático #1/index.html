@@ -21,8 +21,29 @@
         <div class="container-banner">
             <div class="center">
                 <section class="form">
+                    <h2>Preencha o formulário e inicie a sua
+                        caminhada para virar um webmaster!</h2>
                     <form action="">
-                        
+                        <div class="input-container">
+                            <label for="nome">Nome*</label>
+                            <input type="text" id="nome" name="nome" required>
+                        </div><!--input-container-->
+
+                        <div class="input-container">
+                            <label for="e-mail">Email*</label>
+                            <input type="email" id="e-mail" name="e-mail" required>
+                        </div><!--input-container-->
+
+                        <div class="input-container">
+                            <label for="telefone">Telefone*</label>
+                            <input type="tel" id="telefone" name="telefone" required>
+                        </div><!--input-container-->
+
+                        <p class="warning">*Campos obrigatórios</p>
+
+                        <div class="input-submit-container">
+                            <input type="submit" name="acao" value="Enviar">
+                        </div><!--input-subimit-container-->
                     </form>
                 </section>
             </div><!--center-->
