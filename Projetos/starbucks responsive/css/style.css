@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabeçalho {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 20px;
+}
+
+.container-logo,
+.container-menu {
+    width: 50%;
+}
+
+.container-menu {
+    padding-top: 30px;
+    text-align: right;
+}
+
+.container-menu li {
+    list-style: none;
+    display: inline;
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-right: 3%;
+}
+
+.container-menu a:hover {
+    box-shadow: 0 3px 3px -2px #017143;
+}
+
+.page-container {
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.about {
+    width: 70%;
+}
+
+.about h2 {
+    padding-top: 10%;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.about p {
+    padding-top: 2%;
+}
+
+.btn-learn {
+    width: 110px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #017143;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-learn:hover {
+    background-color: #004126;
+}
+
+.product-background {
+    background-color: #017143;
+    width: 70vw;
+    height: 70vw;
+    border-radius: 50%;
+    position: absolute;
+    left: 70%;
+}
+
+.product img {
+    width: 30%;
+}
+
+.nav-social-media ul {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+}
+
+.nav-social-media li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-social-media img {
+    width: 25px;
+}
+
+.more-products {
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    padding-bottom: 2%;
+}
+
+.more-products li {
+        list-style: none;
+        display: inline;
+        padding-right: 40px;
+    }
+
+    .more-products img {
+        width: 50px;
+        transition: transform 0.3s ease;
+    }
+
+    .more-products img:hover {
+        transform: scale(1.1);
+    }
+
+@media screen and (max-width: 1150px) {
+
+    body {
+        overflow-y: auto;
+        overflow-x: auto;
+    }
+
+    .container-menu {
+        width: 60%;
+    }
+
+    .page-container {
+        width: 100%;
+        display: inline;
+        padding-top: 5%;
+    }
+
+    .about {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .about h2 {
+        padding-top: 10%;
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    .about p {
+        padding-top: 2%;
+    }
+
+    .btn-learn {
+        width: 110px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #017143;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-learn:hover {
+        background-color: #004126;
+    }
+
+    .product-background {
+        width: 100%;
+        height: auto;
+        position: relative;
+        left: 0;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2%;
+    }
+
+    .product img {
+        width: 60%;
+        padding-top: 1px;
+        margin-left: 1px;
+    }
+
+    .nav-social-media {
+        position: relative;
+    }
+
+    .nav-social-media ul {
+        position: absolute;
+        top: -240px;
+    }
+
+    .more-products {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        padding-top: 2%;
+        display: flex;
+    }
+
+    .more-products ul {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    
+}
